@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C/CUDA extensions build artifacts
+*.so
+*.o
+*.a
+*.dylib
+*.dll
+build/
+dist/
+*.egg-info/
+.eggs/
+FLEET/
+
+# PyTorch & Model Checkpoints / Experiment Outputs
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+experiment/
+testdata/
+
+# External cloned repositories (cloned separately via setup)
+FLEET/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,17 @@
+N_augment:
+  N_ch: 0
+  N_cov: false
+  kernel_size: 5
+  patch_size: 5
+cpu: false
+dataset:
+  N_in: 5e5
+  batch_size: 1
+  dose_level: 0.25
+  mode: N2C
+  sigma_e: 2
+model:
+  backbone:
+  level:
+  name:
+n_threads: 4

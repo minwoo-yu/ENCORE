@@ -1,0 +1,51 @@
+dataset:
+  mode: "N2N"
+  dose_level: 0.25
+  N_in: 5e5
+  sigma_e: 2
+  generation: "cornish"
+  train_data_path: "traindata"
+  train_patient: ["L096", "L143", "L286", "L291", "L109", "L333", "L506"]
+  train_repeat: 2
+  val_patient: ['L192']
+  val_repeat: 4
+
+  augment: true
+  batch_size: 32
+  patch_size: 256
+  geometry:
+    num_view: 1024
+    num_det: 736
+    det_interval: 1.2858
+    sod: 595
+    sdd: 1085.6
+
+optimizer:
+  name: adam
+  lr: 2.e-4
+  milestones: [60, 120, 180, 240]
+  gamma: 0.5
+  weight_decay: 0
+
+model: 
+  name: "UNet"
+  level: "B"
+  backbone: "conv"
+  num_blocks: [0, 0, 0, 0, 0]
+  pooling: true
+  groups: [0, 0, 0, 0, 0]
+  scale: 0
+  
+N_augment:
+  N_ch: 1
+  N_cov: true
+  kernel_size: 5
+  patch_size: 5
+
+epochs: 300
+test_every: 5
+save_models: true
+
+n_threads: 4
+cpu: false
+seed: 1

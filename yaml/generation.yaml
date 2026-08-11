@@ -1,0 +1,7 @@
+dataset:
+  mode: "N2C"
+  N_in: 5e5
+  sigma_e: 2
+  train_data_path: "traindata"
+  train_patient: ["L096", "L143", "L286", "L291", "L109", "L333", "L506"]
+  val_patient: ['L192']
