@@ -1,0 +1,5 @@
+-std=c++17
+-xcuda
+-I/opt/conda/lib/python3.11/site-packages/torch/include
+-I/opt/conda/lib/python3.11/site-packages/torch/include/torch/csrc/api/include
+-I/opt/conda/include/python3.11
